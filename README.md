@@ -58,7 +58,3 @@ For example, order `HT-1004` produces a simulated **HK$399** quote. Order `HT-10
 The **extended notebook** also has a separate `TEST_CASES` suite immediately before Section 11. It runs independently of `INCLUDE_EXTRA_CASES`. Its first saved run recorded **7 passes, 1 prompt-injection attempt blocked as expected and 3 failures**. The second recorded **6 passes, 1 expected block and 4 failures**. The refund calculations use fixed Python rules. Live model responses and tool choices can vary between runs.
 
 To view those results, open the saved notebook on GitHub. To rerun them, be aware that **Run all executes the additional 11-case suite twice**. The extended notebook sets a ceiling of **1,200 attempted model calls**, compared with **40** in the main notebook. These limits count calls, not tokens.
-
-## Team workflow
-
-Use a personal Colab copy for experiments. To contribute a change, save the intended `.ipynb` to a Git branch, review the changed cells and saved outputs for credentials or personal data, and open a pull request. Keep routine code changes in the main notebook and use the extended copy for results the team wants to share.
